@@ -1,0 +1,67 @@
+.mySwiper .swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+  .mySwiper .swiper-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  
+  .mySwiper .swiper-slide {
+    z-index: 1000;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 ;
+    /* padding: 20px; */
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+
+  @media screen and (max-width: 500px) {
+    .mySwiper.swiper-slide{
+
+      padding: 10px;
+    }
+  }
+  .mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 40px;
+  }
+  .swiper-button-prev{
+    background-color: white;
+    color: black;
+    opacity: 1!important;
+    border-radius: 100%;
+    width:  45px;
+    height: 45px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  .swiper-button-next{
+    background-color: white;
+    color: black;
+    opacity: 1!important;
+    border-radius: 100%;
+    width:  45px;
+    height: 45px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .swiper-button-prev::after{
+    scale: 0.4;
+  }
+  .swiper-button-next::after{
+    scale: 0.4;
+  }
